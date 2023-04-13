@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import ItemList from "./components/ItemList/ItemList";
+import{Navbar} from "./components/NavBar/Navbar";
 
 function App() {
+  let saludo = "Hola!! Bienvenido a la tienda de Jade"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <h1>Jade centro de estetica</h1>
+      <ItemList saludo={saludo}/>
+     
     </div>
   );
 }
