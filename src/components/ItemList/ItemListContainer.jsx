@@ -29,9 +29,7 @@ const updateProduct = (id,data)=>{
 
 }
 
-const createProduct =(data)=>{
 
-}
 
 
 return(

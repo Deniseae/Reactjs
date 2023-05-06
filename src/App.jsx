@@ -10,7 +10,7 @@ function App() {
     <Routes>
 
     <Route element={<Navbar/> }>
-      <Route path="/" element={ <ItemListContainer /> } />
+      <Route path="/" element={<ItemListContainer/>} />
       <Route path="/sing-up"element={<h1>aca deberias registrarte</h1>}/>
       <Route path="*"element={<h1>Not Found, esta ruta no existe</h1>}/>
    </Route>

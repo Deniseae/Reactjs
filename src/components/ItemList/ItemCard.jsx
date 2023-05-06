@@ -8,7 +8,7 @@ import {
 
 } from "@mui/material";
 
-
+import { Link } from "react-router-dom";
 const ItemList = ( {items} ) => {
     return (
         <div 
@@ -36,7 +36,10 @@ const ItemList = ( {items} ) => {
                     </Typography>
                 </CardContent>
                 <CardActions style={{height:30, justifyContent:"space-evenly"}}>
+                    <Link to="/itemDetail" >
                     <Button style={{backgroundColor: "pink"}} variant="contained" size="small">Ver Producto</Button>
+                    </Link>
+                    
                 </CardActions>
             </Card>
               );
