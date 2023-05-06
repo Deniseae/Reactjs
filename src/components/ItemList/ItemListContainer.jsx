@@ -8,7 +8,8 @@ const ItemListContainer = () => {
     const [ items , setItems ] = useState ([])
     const[isDelete, setIsDelete] =useState(false)
     const[isUpdated, setIsUpdated] =useState(false)
-        useEffect(()=> {
+       
+    useEffect(()=> {
 
             setIsDelete(false)
             let data = axios.get("http://localhost:5000/products")
