@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Crema Hidratante",
+      "price": 3000,
+      "stock": 4,
+      "description": "Crema ideal para hidratar peiles jovenes ",
+      "category": "Rostro",
+      "img": "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683343503/hidratante_kqj8ou.png"
+    },
+    {
+
+      "id": 2,
+
+      "title": "Crema Antiage",
+
+      "price": 6000,
+
+      "stock": 3,
+
+      "description": "Crema ideal para hidratar peiles mayores de 40 años ",
+
+      "category": "Rostro",
+
+      "img": "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683341618/antiage_es27dz.png"
+
+  },
+    {
+      "id": 3,
+      "title": "Limpieza acido Hyaluronico",
+      "price": 6000,
+      "stock": 5,
+      "description": "Crema ideal para hidratar peiles maduras contiene acido hyaluronico ",
+      "category": "Rostro",
+      "img": "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683341586/hyaluronico_za5u7t.png"
+    },
+    {
+      "id": 4,
+      "title": "Serum",
+      "price": 2000,
+      "stock": 7,
+      "description": "Ideal para todo tipo de pieles ",
+      "category": "Rostro",
+      "img": "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683341727/serum_f16dya.png"
+    },
+    {
+      "id": 5,
+      "title": "Mascara exfoliante",
+      "price": 2200,
+      "stock": 2,
+      "description": "Para todo tipo de piel, contiene vit A y D",
+      "category": "Rostro",
+      "img": "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683343562/crema_wirudb.png"
+    },
+    {
+      "id": 6,
+      "title": "Espuma facial",
+      "price": 4000,
+      "stock": 4,
+      "description": "Espuma limpiadora facial contiene celulas madres",
+      "category": "Rostro",
+      "img": "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683341642/celulasmadres_udgaxa.png"
+    }
+  ]
+}
