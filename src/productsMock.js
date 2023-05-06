@@ -47,7 +47,7 @@ export const products = [
 
         category: "Rostro",
 
-        img: "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683341618/antiage_es27dz.png"
+        img: "https://res.cloudinary.com/dr8vx9tkq/image/upload/v1683341586/hyaluronico_za5u7t.png"
 
     },
     {

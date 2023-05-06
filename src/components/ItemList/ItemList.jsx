@@ -1,24 +1,47 @@
-const ItemList = ( {items} ) => {
+import { 
+    Button,
+    Card, 
+    CardActions, 
+    CardContent, 
+    CardMedia,
+    Typography,
 
-    return(
-        <div style={{display: "flex", border:"2px solid pink"}}>
-            {items.map((elemento)=> {
-                    return (
-                    <div 
-                    style={{
-                    border:"2px solid grey", 
-                    width: "200px", 
-                    height:"250px"
-                     }}
-                     >
-                    <img src={elemento.img} alt="" style={{width:"40%"}}/>
-                    <h3>{elemento.title}</h3>
-                    <h4>{elemento.price}</h4>
-                </div>
-                 );
-                })}
-        </div>
-        );
-};
+} from "@mui/material";
+
+const ItemList = ( {items} ) => {
+    return (
+        <div 
+        style={{
+            display: "flex",
+            border:"2px solid pink",    
+            justifyContent:"space-evenly",
+            minHeight:"90vh",
+            padding:"40px"
+            }}>
+            {items.map((item)=> {
+            return(
+            <Card sx={{ width: 345, height: 450 }}>
+                <CardMedia
+                    sx={{ height: 230 }}
+                    image={item.img}
+                    title="Productos"
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                    {item.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    {item.description}
+                    </Typography>
+                </CardContent>
+                <CardActions style={{height:30, justifyContent:"space-evenly"}}>
+                    <Button variant="contained" size="small">Ver Producto</Button>
+                </CardActions>
+            </Card>
+              );
+            })};
+            </div>
+    );
+    };
 
 export default ItemList;
