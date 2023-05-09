@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {ItemDetail} from'./ItemDetail'
-import { products } from '../../productsMock'
+import axios from 'axios';
+import { products } from '../../productsMock';
 
-export const itemDetailContainer =() => {
+const itemDetailContainer =() => {
 
     const[product, setProduct] = useState({})
     let id = 4;

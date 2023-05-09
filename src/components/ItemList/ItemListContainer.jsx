@@ -1,48 +1,30 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import axios from "axios";
-
+import { products } from "../../productsMock";
 
 const ItemListContainer = () => {
 
-    const [ items , setItems ] = useState ([])
-    const[isDelete, setIsDelete] =useState(false)
-    const[isUpdated, setIsUpdated] =useState(false)
-       
-    useEffect(()=> {
+  const [items, setItems] = useState([])
+  const [isDelete, setIsDelete] = useState(false)
+  const [isUpdated, setIsUpdated] = useState(false)
 
-            setIsDelete(false)
-            let data = axios.get("http://localhost:5000/products")
-            data.then( res => setItems(res.data))
+  useEffect(() => {
+    setIsDelete(false);
+    let data = new Promise((resolve) => {
+      resolve(products);
+    });
 
-        }, [isDelete] )
+    data.then((result) => {
+      setItems(result);
+    });
+  }, []);
 
-const deleteProduct= (id)=>{
-    axios.delete(`http://localhost:5000/products/${id}` )
-    setIsDelete(true)
-
-};
-
-const updateProduct = (id,data)=>{
-    axios.patch(`http://localhost:5000/products/${id}`, data)
-
-
-}
-
-
-
-
-return(
+  return (
     <div>
-        <
-        ItemList items={items} 
-    
-        deleteProduct={deleteProduct}
-
-        updateProduct= {updateProduct}
-        />
+        <ItemList items={items} />
     </div>
-);
+  );
 
 };
 export default ItemListContainer;
