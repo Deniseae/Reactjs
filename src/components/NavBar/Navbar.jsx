@@ -1,7 +1,8 @@
 import CartWidget from "../CartWidget/CartWidget";
 import styles from "./Navbar.module.css";
-import imgLogo from"../../assets/images/jade sin fondo letras blancas.png"
 import {Outlet, Link} from "react-router-dom"
+import { colors } from "@mui/material";
+import { red } from "@mui/material/colors";
 
 export const Navbar = () => {
     return(
@@ -9,7 +10,7 @@ export const Navbar = () => {
             <div className={styles.containerNavbar}>
             
                 <Link to="/">
-                <h1>JADE</h1>
+                <h1>Jade</h1>
                 </Link>
            
                 <ul style={{display: "flex", gap: "30px"}}>

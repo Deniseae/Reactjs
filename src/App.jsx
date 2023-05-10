@@ -1,6 +1,6 @@
 import{ BrowserRouter, Routes, Route } from"react-router-dom";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
-import{ItemDetailContainer} from"./components/ItemDetail/ItemDetailContainer";
+import{ItemDetail}from"./components/ItemDetail/ItemDetail";
 import { Navbar } from "./components/NavBar/Navbar";
 
 
@@ -12,8 +12,8 @@ function App() {
 
     <Route element={<Navbar/> }>
       <Route path="/" element={<ItemListContainer/>} />
-
-      <Route path="/sing-up"element={<h1>aca deberias registrarte</h1>}/>
+      <Route path="/Itemdetail" element={<ItemDetail/>}/>
+      <Route path="/sing-up"element={<h1>Coloque sus datos a continuacion</h1>}/>
       <Route path="*"element={<h1>Not Found, esta ruta no existe</h1>}/>
    </Route>
     

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export const ItemDetail =({product}) =>{
+export const ItemDetail =({product}) => {
     return(
         <div>
             <h2>{product.title}</h2>

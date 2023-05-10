@@ -34,10 +34,15 @@ const ItemList = ( {items} ) => {
                     <Typography variant="body2" color="text.secondary">
                     {item.description}
                     </Typography>
+                    <Typography variant="body2" color="primary">
+                    {item.price}
+                     </Typography>
                 </CardContent>
                 <CardActions style={{height:30, justifyContent:"space-evenly"}}>
-                    <Link to="/itemDetail" >
-                    <Button style={{backgroundColor: "pink"}} variant="contained" size="small">Ver Producto</Button>
+                    <Link to={`/itemDetail/:${item.id}`} >
+                    <Button style={{backgroundColor: "pink"}} variant="contained" size="small">
+                        Ver detalle
+                    </Button>
                     </Link>
                     
                 </CardActions>
@@ -47,3 +52,4 @@ const ItemList = ( {items} ) => {
             </div>
     );
     };
+    export default ItemList;
